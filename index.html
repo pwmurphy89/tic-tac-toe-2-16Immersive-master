@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+	<div id="game-wrapper">
+
+		<div id="game-header">
+			1 or 2 Player?
+		</div>
+
+			<div class="num-players">
+				<button id="one-player">1 Player</button>
+				<button id="two-players">2 Player</button>
+			</div>
+
+
+		
+
+		<div id="board-wrapper">
+			<div id="row1">
+				<button disabled class="left square empty" id="a1"></button>
+				<button disabled class="square empty" id="a2"></button>
+				<button disabled class="square empty" id="a3"></button>
+			</div>
+			<div id="row2">
+				<button disabled class="left square empty" id="b1"></button>
+				<button disabled class="square empty" id="b2"></button>
+				<button disabled class="square empty" id="b3"></button>
+			</div>
+			<div id="row3">
+				<button disabled class="left square empty" id="c1"></button>
+				<button disabled class="square empty" id="c2"></button>
+				<button disabled class="square empty" id="c3"></button>
+			</div>
+		</div>
+		<button id="reset" onclick="resetGame();">RESET</button>
+		<button id="playC" onclick="playComputer();">Play Computer</button>
+		<button id="playF" onclick ="playFriend();">Play Friend</button>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
