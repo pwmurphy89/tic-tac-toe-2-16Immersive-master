@@ -72,16 +72,14 @@
 }
 
 
-.num-players {
+.num-players, .difficulty {
 	margin: 20px auto;
 	width: 60%;
 	text-align: center;
 
-
-
 }
 
-.num-players button {
+.num-players button, .difficulty button {
 	width: 120px;
 	padding: 0px 5px;
 	background-color: #ddd;

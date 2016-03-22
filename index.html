@@ -5,6 +5,15 @@
 
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+
+
+	var wid = 100/ rowSize;
+		.square {
+			width: wid%;
+		}
+
+	</style>
 
 </head>
 <body>
@@ -18,6 +27,14 @@
 			<div class="num-players">
 				<button id="one-player">1 Player</button>
 				<button id="two-players">2 Player</button>
+			</div>
+
+			<div class="difficulty">
+
+				<button id="easy" value="easy">Easy</button>
+				<button id="med" value="med">Medium</button>
+				<button id="hard" value="hard">Hard</button>
+
 			</div>
 
 
@@ -40,11 +57,9 @@
 				<button disabled class="square empty" id="c3"></button>
 			</div>
 		</div>
-		<button id="reset" onclick="resetGame();">RESET</button>
-		<button id="playC" onclick="playComputer();">Play Computer</button>
-		<button id="playF" onclick ="playFriend();">Play Friend</button>
-
+		
 	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 	<script type="text/javascript" src="scripts.js"></script>

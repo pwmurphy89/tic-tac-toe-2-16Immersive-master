@@ -8,6 +8,46 @@
 $(document).ready(function() {
 
 
+
+
+
+	$(".difficulty :button").click(function() {
+		var diff = $(this).val();
+		console.log(diff);
+
+		if (diff == "easy"){
+			rowSize = 3;
+			gridSize = rowSize * rowSize;
+		}else if(diff == "med"){
+			rowSize = 4;
+			gridSize = rowSize * rowSize;
+		}else if(diff == "hard"){
+			rowSize = 5;
+			gridSize = rowSize * rowSize;
+		}
+			var square-width = (100 / rowSize);
+			square-width.css()
+
+	});
+
+		for (var i = 0; i < gridSize.length; i++){
+			var html = "<div class ='mg-tile'>";
+					html += "<div class='mg-tile-inner unmatched flipped'>";
+						html += "<div class='mg-tile-outside'>" + "</div>";
+						html += "<div class='mg-tile-inside'>" + gridArray[i] + "</div>";
+					html += "</div>";
+				html += "</div>";
+				$("#mg-contents").append(html);
+
+		}
+
+					<div id="row1">
+				<button disabled class="left square empty" id="a1"></button>
+				<button disabled class="square empty" id="a2"></button>
+				<button disabled class="square empty" id="a3"></button>
+			</div>
+
+
 var winners = 
 [
 	['a1','a2','a3'],
@@ -183,7 +223,7 @@ function resetGame(){
 	$('#play-again').css("display", "none");
 }
 
-var squareWidth = document.getElementById('a1').clientWidth;
+var squareWidth = $('#a1').width();
 var squares = $('.square');
 for(i=0; i<squares.length; i++){
 	squares[i].style.height = squareWidth + 'px';
